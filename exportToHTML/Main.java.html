@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Main.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #000080; font-weight: bold;}
+.s1 { color: #000000;}
+.s2 { color: #808080; font-style: italic;}
+.s3 { color: #008000; font-weight: bold;}
+.s4 { color: #0000ff;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+Main.java</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span>java.util.Scanner;
+
+<span class="s0">public class </span>Main {
+    <span class="s2">//Creating a method for finding the # seats available</span>
+    <span class="s2">//</span>
+    <span class="s0">public static void </span>main(String[] args) {
+
+
+        Scanner scanner = <span class="s0">new </span>Scanner(System.in);
+
+        System.out.println(<span class="s3">&quot;How many carriages are on the train?&quot;</span>);
+        <span class="s0">int </span>carriages = scanner.nextInt();
+        System.out.println(carriages * <span class="s4">100</span>);
+
+
+        System.out.println(<span class="s3">&quot;How many adult tickets have been sold?&quot;</span>);
+        <span class="s0">int </span>adult = scanner.nextInt();
+        System.out.println(adult);
+
+        System.out.println(<span class="s3">&quot;How many child tickets have been sold?&quot;</span>);
+        <span class="s0">int </span>child = scanner.nextInt();
+        System.out.println(child);
+
+        System.out.println(<span class="s3">&quot;How many bike tickets have been sold?&quot;</span>);
+        <span class="s0">int </span>bike = scanner.nextInt();
+        System.out.println(bike * <span class="s4">2</span>);
+
+        <span class="s2">// method for performing the calculations</span>
+        <span class="s2">//</span>
+        <span class="s0">int </span>seats_left = (carriages-adult-child-bike);
+        System.out.println(<span class="s3">&quot;There are &quot; </span>+ seats_left + <span class="s3">&quot; seats left.&quot;</span>);
+
+        <span class="s0">return</span>;
+    }
+}
+
+
+
+
+
+
+
+</pre>
+</body>
+</html>
